@@ -1,6 +1,7 @@
 import { Button } from './Button';
 import { getMeta } from './metaFunction';
 
+// This works 👇
 // const meta = {
 //   title: 'Example/Button',
 //   component: Button,
@@ -9,7 +10,10 @@ import { getMeta } from './metaFunction';
 //     backgroundColor: { control: 'color' },
 //   },
 // };
+
+// This doesn't 👇
 const meta = getMeta('Button', Button);
+
 export default meta;
 
 export const Primary = {
